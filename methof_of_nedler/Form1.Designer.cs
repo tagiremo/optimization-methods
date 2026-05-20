@@ -75,9 +75,19 @@
             // nudVariables
             // 
             this.nudVariables.Location = new System.Drawing.Point(105, 36);
+            this.nudVariables.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.nudVariables.Name = "nudVariables";
             this.nudVariables.Size = new System.Drawing.Size(46, 20);
             this.nudVariables.TabIndex = 1;
+            this.nudVariables.Value = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
             // 
             // pnlStartPoint
             // 
@@ -91,49 +101,49 @@
             this.nudAlpha.Location = new System.Drawing.Point(95, 174);
             this.nudAlpha.Name = "nudAlpha";
             this.nudAlpha.Size = new System.Drawing.Size(120, 20);
-            this.nudAlpha.TabIndex = 0;
+            this.nudAlpha.TabIndex = 3;
             // 
             // nudBeta
             // 
             this.nudBeta.Location = new System.Drawing.Point(95, 200);
             this.nudBeta.Name = "nudBeta";
             this.nudBeta.Size = new System.Drawing.Size(120, 20);
-            this.nudBeta.TabIndex = 3;
+            this.nudBeta.TabIndex = 4;
             // 
             // nudGamma
             // 
             this.nudGamma.Location = new System.Drawing.Point(95, 278);
             this.nudGamma.Name = "nudGamma";
             this.nudGamma.Size = new System.Drawing.Size(120, 20);
-            this.nudGamma.TabIndex = 4;
+            this.nudGamma.TabIndex = 7;
             // 
             // nudDelta
             // 
             this.nudDelta.Location = new System.Drawing.Point(95, 252);
             this.nudDelta.Name = "nudDelta";
             this.nudDelta.Size = new System.Drawing.Size(120, 20);
-            this.nudDelta.TabIndex = 5;
+            this.nudDelta.TabIndex = 6;
             // 
             // nudTolerance
             // 
             this.nudTolerance.Location = new System.Drawing.Point(95, 226);
             this.nudTolerance.Name = "nudTolerance";
             this.nudTolerance.Size = new System.Drawing.Size(120, 20);
-            this.nudTolerance.TabIndex = 6;
+            this.nudTolerance.TabIndex = 5;
             // 
             // nudMaxIter
             // 
             this.nudMaxIter.Location = new System.Drawing.Point(95, 304);
             this.nudMaxIter.Name = "nudMaxIter";
             this.nudMaxIter.Size = new System.Drawing.Size(120, 20);
-            this.nudMaxIter.TabIndex = 7;
+            this.nudMaxIter.TabIndex = 8;
             // 
             // btnRun
             // 
             this.btnRun.Location = new System.Drawing.Point(95, 330);
             this.btnRun.Name = "btnRun";
             this.btnRun.Size = new System.Drawing.Size(75, 23);
-            this.btnRun.TabIndex = 8;
+            this.btnRun.TabIndex = 9;
             this.btnRun.Text = "Начать";
             this.btnRun.UseVisualStyleBackColor = true;
             // 
@@ -147,30 +157,33 @@
             this.dgvIterations.Location = new System.Drawing.Point(513, 68);
             this.dgvIterations.Name = "dgvIterations";
             this.dgvIterations.Size = new System.Drawing.Size(344, 150);
-            this.dgvIterations.TabIndex = 9;
+            this.dgvIterations.TabIndex = 10;
             // 
             // Iteration
             // 
             this.Iteration.HeaderText = "№";
             this.Iteration.Name = "Iteration";
+            this.Iteration.Width = 50;
             // 
             // Point
             // 
             this.Point.HeaderText = "Точка";
             this.Point.Name = "Point";
+            this.Point.Width = 150;
             // 
             // Value
             // 
             this.Value.HeaderText = "Значение функции";
             this.Value.Name = "Value";
+            this.Value.Width = 120;
             // 
             // lblResult
             // 
             this.lblResult.AutoSize = true;
-            this.lblResult.Location = new System.Drawing.Point(471, 15);
+            this.lblResult.Location = new System.Drawing.Point(510, 15);
             this.lblResult.Name = "lblResult";
             this.lblResult.Size = new System.Drawing.Size(35, 13);
-            this.lblResult.TabIndex = 10;
+            this.lblResult.TabIndex = 11;
             this.lblResult.Text = "label1";
             // 
             // pbPlot
@@ -178,7 +191,7 @@
             this.pbPlot.Location = new System.Drawing.Point(259, 226);
             this.pbPlot.Name = "pbPlot";
             this.pbPlot.Size = new System.Drawing.Size(598, 323);
-            this.pbPlot.TabIndex = 11;
+            this.pbPlot.TabIndex = 12;
             this.pbPlot.TabStop = false;
             // 
             // label2
@@ -300,7 +313,7 @@
             this.Controls.Add(this.nudVariables);
             this.Controls.Add(this.tbFunction);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Метод Нелдера-Мида";
             ((System.ComponentModel.ISupportInitialize)(this.nudVariables)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudAlpha)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudBeta)).EndInit();
@@ -345,4 +358,3 @@
         private System.Windows.Forms.Label label10;
     }
 }
-
